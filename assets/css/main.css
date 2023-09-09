@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 html, body, div, span, applet, object,
@@ -2640,4 +2637,34 @@ input, select, textarea {
 		border-radius: 8px; /* This gives the box rounded corners */
 		color: #FFF; /* This sets the text color to white, but you can change it to your preference */
 	}
+
+	.responsive-image img {
+		width: 60%;  /* Default size reduced to 60% for larger screens */
+		display: block;  /* Ensures the image is a block element for margin auto to work */
+		margin: 0 auto;  /* This centers the image */
+		;
+	}
+	
+	/* For very large desktop screens with wider resolutions */
+	@media (min-width: 1201px) {
+		.responsive-image img {
+			width: 50%;  /* On large screens, further reduce the image size */
+		}
+	}
+	
+	/* For medium screens like tablets and smaller desktops */
+	@media (max-width: 1200px) and (min-width: 769px) { 
+		.responsive-image img {
+			width: 50%;  
+		}
+	}
+	
+	/* For small screens like mobiles */
+	@media (max-width: 768px) {  
+		.responsive-image img {
+			width: 70%; 
+			float: right;  /* If you still want it floated to the right on mobile, but remove if not */
+		}
+	}
+	
 	
