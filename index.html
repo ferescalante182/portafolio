@@ -130,34 +130,43 @@
 					</section>
 
 				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contacto</h2>
-							</header>
-
-							<p>
-								If you have any questions or want to collaborate with me, don't hesitate to contact me.
-							</p>
-
-							<form action="https://formsubmit.co/ferescalante.182@gmail.com" method="POST">
-								<input type="text" name="nombre" placeholder="Nombre" required>
-								<input type="email" name="email" placeholder="E-mail" required>
-								<textarea name="message" placeholder="Mensaje"></textarea>
-								<input type="hidden" name="_captcha" value="false">
-								<input type="hidden" name="_next" value="https://ferescalante182.github.io/portafolio/thanks.html">
-								
-
-
-
-
-
-								<button type="submit">Enviar</button>
-						   </form>
-
-						</div>
-					</section>
+				<section id="contact" class="four">
+					<div class="container">
+				
+						<header>
+							<h2>Contact</h2>
+						</header>
+				
+						<p>
+							If you have any questions or want to collaborate with me, don't hesitate to contact me.
+						</p>
+				
+						<!-- Combined Form -->
+						<form action="https://api.web3forms.com/submit" method="POST">
+							<!-- Access Key -->
+							<input type="hidden" name="access_key" value="59be0bd9-43ab-468e-86a4-df05740354ba">
+				
+							<!-- Name -->
+							<input type="text" name="name" placeholder="Name" required>
+							
+							<!-- Email -->
+							<input type="email" name="email" placeholder="E-mail" required>
+							
+							<!-- Message -->
+							<textarea name="message" placeholder="Message" required></textarea>
+				
+							<!-- Captcha -->
+							<div class="h-captcha" data-captcha="true"></div>
+							
+							<!-- Submit Button -->
+							<button type="submit">Send</button>
+						</form>
+				
+						<!-- Web3Forms Script -->
+						<script src="https://web3forms.com/client/script.js" async defer></script>
+					</div>
+				</section>
+				
 
 			</div>
 
