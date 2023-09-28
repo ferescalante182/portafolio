@@ -2688,5 +2688,26 @@ input, select, textarea {
 			width: 30%;  /* Adjust width for smaller devices, indirectly controlling the gap */
 		}
 	}
+
+/* For larger screens */
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 5px; /* Some space between the images */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .image-row img {
+        width: 30%; /* You can adjust this value according to your preference */
+    }
+}
+
 	
 	
